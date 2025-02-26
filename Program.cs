@@ -1,25 +1,19 @@
-﻿//written by emilynn 
-//2/25/25
-using System.Drawing;
-
-namespace ShapesAndAreas
+﻿namespace AnimalsAndSounds
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            Circle aCircle1 = new Circle("Red", 2.5);
-            Circle aCircle2 = new Circle("Blue", 5.0);
+            Cat aCat1 = new Cat();
+            Cat aCat2 = new Cat();
 
-            Retangle aRetangle1 = new Retangle("Orange", 2.0, 3.0);
-            Retangle aRetangle2 = new Retangle("Greem", 6.0, 2.0);
+            Dog aDog1 = new Dog();  
+            Dog aDog2 = new Dog();
 
-            Console.WriteLine(aCircle1.ToString());
-            Console.WriteLine(aCircle2.ToString());
-            Console.WriteLine(aRetangle1.ToString());
-            Console.WriteLine(aRetangle2.ToString());
-
+            Console.WriteLine(aCat1);
+            Console.WriteLine(aCat2);
+            Console.WriteLine(aDog1);
+            Console.WriteLine(aDog2);
         }
-        
     }
 }
