@@ -1,30 +1,25 @@
-﻿namespace EmployeesAndSpecializations
+﻿//written by emilynn 
+//2/25/25
+using System.Drawing;
+
+namespace ShapesAndAreas
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Employee aEmployee1 = new Employee("Chloe", 128000);
-            Employee aEmployee2 = new Employee("Emilynn", 320000);
-            Employee aEmployee3 = new Employee("Marlee", 43000);
+            Circle aCircle1 = new Circle("Red", 2.5);
+            Circle aCircle2 = new Circle("Blue", 5.0);
 
+            Retangle aRetangle1 = new Retangle("Orange", 2.0, 3.0);
+            Retangle aRetangle2 = new Retangle("Greem", 6.0, 2.0);
 
+            Console.WriteLine(aCircle1.ToString());
+            Console.WriteLine(aCircle2.ToString());
+            Console.WriteLine(aRetangle1.ToString());
+            Console.WriteLine(aRetangle2.ToString());
 
-
-
-            Manager aManager1 = new Manager("Chloe", 100, 13);
-            Manager aManager2 = new Manager("Emilynn", 114, 10);
-
-
-            Engineer aEngineer = new Engineer("Marlee", 300, "airplanes");
-
-            Console.WriteLine(aEmployee1.ToString());
-            Console.WriteLine(aEmployee2.ToString());
-            Console.WriteLine(aEmployee3.ToString());
-
-            Console.WriteLine(aEngineer.ToString());
-            Console.WriteLine(aManager1.ToString());
-            Console.WriteLine(aManager2.ToString());
         }
+        
     }
 }
