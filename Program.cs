@@ -1,19 +1,15 @@
-﻿namespace AnimalsAndSounds
+﻿namespace LibrarySystem
 {
-    public class Program
+    internal class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Cat aCat1 = new Cat();
-            Cat aCat2 = new Cat();
+            EBook aEbook = new EBook("Power", "Jeffery Pfeffer", 2011, 208);
 
-            Dog aDog1 = new Dog();  
-            Dog aDog2 = new Dog();
+            PrintedBook aPrintedBook = new PrintedBook("Wind and Truth", "Brandon Sanderson", 2024, 1248);
 
-            Console.WriteLine(aCat1);
-            Console.WriteLine(aCat2);
-            Console.WriteLine(aDog1);
-            Console.WriteLine(aDog2);
+            Console.WriteLine(aEbook.ToString());
+            Console.WriteLine(aPrintedBook.ToString());
         }
     }
 }
